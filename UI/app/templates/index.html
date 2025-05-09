@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Code Helper</title>
+    <style>
+        body { font-family: Arial; margin: 2rem; background: #f4f4f4; }
+        textarea, input { width: 100%; padding: 0.5rem; margin-top: 0.5rem; }
+        button { padding: 0.5rem 1rem; margin-top: 1rem; }
+        .output { background: #fff; padding: 1rem; margin-top: 1rem; border-radius: 6px; }
+    </style>
+</head>
+<body>
+    <h1>🤖 DocuMentor</h1>
+    <form method="POST">
+        <h2>📘 Ask Documentation</h2>
+        <textarea name="question" rows="3" placeholder="Ask a question about the documentation..."></textarea>
+
+        <h2>🧠 Explain Code</h2>
+        <textarea name="code" rows="8" placeholder="Paste Python code..."></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if answer %}
+        <div class="output">
+            <h3>Answer:</h3>
+            <pre>{{ answer }}</pre>
+        </div>
+    {% endif %}
+
+    {% if explanation %}
+        <div class="output">
+            <h3>Code Explanation:</h3>
+            <pre>{{ explanation }}</pre>
+        </div>
+    {% endif %}
+</body>
+</html>
