@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Python Code Helper</title>
+    <title>DocuMentor</title>
     <style>
         body { font-family: Arial; margin: 2rem; background: #f4f4f4; }
         textarea, input { width: 100%; padding: 0.5rem; margin-top: 0.5rem; }
@@ -33,7 +33,7 @@
     {% if explanation %}
         <div class="output">
             <h3>Code Explanation:</h3>
-            <pre>{{ explanation }}</pre>
+            <p>{{ explanation.content }}</p>
         </div>
     {% endif %}
 </body>
